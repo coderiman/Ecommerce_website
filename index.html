@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iman Ecommerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="section-navbar">
+    <section class="top_text">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 30 day refund or return gurantee</p>
+        </div>
+        <div class="sign_in_up">
+          <a href="# ">SIGN IN</a>
+          <a href="# ">SIGN UP</a>
+        </div>
+      </div>
+
+    </section>
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="./images/Astore_logo.png" alt="astore logo" class="logo">
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="product.html" class="nav-link">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li> -->
+          <li class="nav-item special" id="addtocart">
+            <a href="./addTocard.html" class="nav-link add-to-cart-button" id="cartValue"><img src="./cart.svg">0</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="container grid grid-two-cols">
+        <div class="section-hero-content">
+          <p class="hero-subheading">Explore the the latest in tech Industry</p>
+          <h1 class="hero-heading">
+            Your destination for cutting edge gadgets!
+          </h1>
+          <p class="hero-para">
+            wecome to AStore,Your destination for cutting edge gadgets! Explore the latest in tech innovation and style
+            with us
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="./public/images/applicance.jpg" alt="applicance">
+        </div>
+      </div>
+      <div class="container ads grid-three-cols">
+        <div class="div-extra grid grid-two-cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>Get and extra 50% offer</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img">
+            <img src="./public/images/applicance.jpg">
+          </div>
+        </div>
+        <div class="div-extra grid grid-two-cols second">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>Get and extra 80% offer</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img">
+            <img src="./public/images/smart-mobile-promotional-banner-design-template_987701-2646.avif">
+          </div>
+        </div>
+        <div class="div-extra grid grid-two-cols second">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>Get and extra 80% offer</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img">
+            <img src="./public/images/applicance.jpg">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="section-products">
+      <div class="container">
+        <div class="section-common-heading">
+          <h1>Cheackout products of AStore</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div id="productContainer">
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- start product template section -->
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="">
+          </div>
+          <h2 class="productName"></h2>
+          <div class="productRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+          <div class="productStockElement">
+            <p class="productProperty">Total stocks available:</p>
+            <p class="productStock"></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity Peices</p>
+            <div class="stockElement grid-three-cols-button">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-card-button" ><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </article>
+        
+      </div>
+    </template>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
